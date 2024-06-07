@@ -1,3 +1,9 @@
+# Python installation command:
+# pyinstaller --onefile --windowed --noconsole --icon=icons/AutoShutterIcon.icns \
+# --add-data "icons/:icons" \
+# --add-data "AppleScripts/:AppleScripts" --name iPhone_Syrp_Shutter_Control\
+# autoShutter.py
+
 import os
 import sys
 import tkinter as tk
