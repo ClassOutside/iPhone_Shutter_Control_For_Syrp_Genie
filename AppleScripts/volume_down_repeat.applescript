@@ -1,6 +1,9 @@
 on run argv
     -- Get the argument passed from the previous AppleScript
     set repeatCount to (item 1 of argv) as integer
+    
+    -- Set script directory
+    set scriptDirectory to POSIX path of (do shell script "dirname " & quoted form of POSIX path of (path to me))
 
     -- Function to press the button where Description: volume down
     tell application "System Events"
@@ -35,7 +38,16 @@ on run argv
                             set centerYRounded to round centerY
                             
                             -- Click the button using cliclick
-                            do shell script "cliclick c:" & centerXRounded & "," & centerYRounded
+                            -- do shell script "cliclick c:" & centerXRounded & "," & centerYRounded
+
+                            -- get the cliclick directory
+                            set parentDirectory to do shell script "dirname " & quoted form of scriptDirectory
+                            set binDirectory to parentDirectory & "/bin/"
+                            set cliclickPath to binDirectory & "cliclick"
+
+                            -- Click the button using cliclick
+                            do shell script cliclickPath & " c:" & centerXRounded & "," & centerYRounded
+
                             delay 2
                             -- Set the flag to true indicating the button is pressed
                             set buttonPressed to true
