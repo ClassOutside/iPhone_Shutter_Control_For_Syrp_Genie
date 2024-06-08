@@ -13,6 +13,8 @@ This application may only run on MacOS and requires specific third-party softwar
 The required software can be found below:
 - The Syrp app, by Syrp: https://apps.apple.com/us/app/syrp/id1387335063
 - The Keypad app, by Toolbunch LLC: https://apps.apple.com/us/app/keypad-bluetooth-keyboard/id1491684442?mt=12
+- The cliclick binary, by BlueM: https://github.com/BlueM/cliclick?tab=License-1-ov-file#readme
+  - This binary is included in the package. 
 
 ------------------------------------------------------------------------------------
 
