@@ -36,3 +36,9 @@ The application should now begin. This should start the turntable and begin taki
 The delay occurs while the application searches the screen for the necessary buttons. 
 
 This process requires the ability to leave your mac running, without use of the mouse, until all photos are taken. The mouse is used to repeatedly click an on-screen button, and if moved may interrupt the process.
+
+------------------------------------------------------------------------------------
+
+# Related Videos
+- Installation: https://youtu.be/XJCp2flDMIM
+- Overview: https://youtu.be/9tybX4yEF2g
